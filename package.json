@@ -1,0 +1,18 @@
+{
+  "name": "go-binding-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "build:go": "GOARCH=wasm GOOS=js go build -o ./build/main.wasm ./lib/go/main.go"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async-redis": "^2.0.0",
+    "testcontainers": "^10.9.0"
+  }
+}
